@@ -27,7 +27,20 @@ Salesforce Setup
 1. Enter the ``Setup`` page of the organization where you want to install the Contribum package on.
 2. From the Home page, search for ``Named Credential`` in the Quick Find searchbar.
 3. Click the ``New Named Credential`` Image 1
-4. Fill in the form as the image provides: |NamedCred|
+4. Fill in the form as follows:
+``Label``: Contribum
+``Name``: Contribum
+``URL``: https://www.omnispekt.com
+``Certificate``: Leave blank
+``Identity Type``: Named Principal
+``Authentication Protocol``: Password Authentication
+``Username``: axenon
+``Password``: Password provided by Package Manager
+``Generate Authorization Header``: Check
+``Allow Merge Fields in HTTP Header``: Check
+``Allow Merge Fields in HTTP Body``: Check
+``Outbound Network Connection``: Leave Blank
+5. Press ``Save``
 
 
 .. |NamedCred| image:: Screenshot 2022-04-11 at 15.04.15.png
