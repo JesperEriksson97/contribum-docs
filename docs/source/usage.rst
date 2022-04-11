@@ -21,7 +21,8 @@ Installation Link (Sandbox): https://test.salesforce.com/packaging/installPackag
 
 Salesforce Setup
 ----------------
-
+.. role:: raw-html(raw)
+    :format: html
 **Named Credential Setup**
 
 1. Enter the ``Setup`` page of the organization where you want to install the Contribum package on.
@@ -57,10 +58,6 @@ Salesforce Setup
 
 .. note::
    These are just the standard set up. If other requirements are needed by the organization feel free to change settings however you like.
-
-
-.. role:: raw-html(raw)
-    :format: html
 
 **Custom Metadata Setup**
 1. Enter the ``Setup`` page of the organization where you want to install the Contribum package on.
