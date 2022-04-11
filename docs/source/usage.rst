@@ -1,7 +1,7 @@
 Usage
 =====
 
-.. _installation:
+.. _Setup:
 
 Installation 0.27.0
 ------------
@@ -26,38 +26,50 @@ Salesforce Setup
 
 1. Enter the ``Setup`` page of the organization where you want to install the Contribum package on.
 2. From the Home page, search for ``Named Credential`` in the Quick Find searchbar.
-3. Click the ``New Named Credential`` Image 1
+3. Click the ``New Named Credential``
 4. Fill in the form as follows:
+:raw-html:`<br />`
 ``Label``: Contribum
+:raw-html:`<br />`
 ``Name``: Contribum
+:raw-html:`<br />`
 ``URL``: https://www.omnispekt.com
+:raw-html:`<br />`
 ``Certificate``: Leave blank
+:raw-html:`<br />`
 ``Identity Type``: Named Principal
+:raw-html:`<br />`
 ``Authentication Protocol``: Password Authentication
+:raw-html:`<br />`
 ``Username``: axenon
+:raw-html:`<br />`
 ``Password``: Password provided by Package Manager
+:raw-html:`<br />`
 ``Generate Authorization Header``: Check
+:raw-html:`<br />`
 ``Allow Merge Fields in HTTP Header``: Check
+:raw-html:`<br />`
 ``Allow Merge Fields in HTTP Body``: Check
+:raw-html:`<br />`
 ``Outbound Network Connection``: Leave Blank
+:raw-html:`<br />`
 5. Press ``Save``
 
+.. note::
+   These are just the standard set up. If other requirements are needed by the organization feel free to change settings however you like.
 
-.. |NamedCred| image:: Screenshot 2022-04-11 at 15.04.15.png
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+.. role:: raw-html(raw)
+    :format: html
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+**Custom Metadata Setup**
+1. Enter the ``Setup`` page of the organization where you want to install the Contribum package on.
+2. From the Home page, search for ``Custom Metadata Types`` in the Quick Find searchbar.
+3. Click the pre-installed custom metadata type called ``Contribum``. If not, contact the Package Manager at Axenon.
+4. Click on ``Manage Contribum``.
+5. Click on ``Setup``.
+6. Click on ``Edit``.
+7. Fill in the organization data. The Issue numbers should be provided by Contribum. The rest of the fields are up to you.
 
-.. autoexception:: lumache.InvalidKindError
 
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
 
