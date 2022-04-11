@@ -60,6 +60,7 @@ Salesforce Setup
    These are just the standard set up. If other requirements are needed by the organization feel free to change settings however you like.
 
 **Custom Metadata Setup**
+
 1. Enter the ``Setup`` page of the organization where you want to install the Contribum package on.
 2. From the Home page, search for ``Custom Metadata Types`` in the Quick Find searchbar.
 3. Click the pre-installed custom metadata type called ``Contribum``. If not, contact the Package Manager at Axenon.
