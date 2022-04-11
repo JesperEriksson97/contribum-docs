@@ -27,7 +27,7 @@ Salesforce Setup
 
 1. Enter the ``Setup`` page of the organization where you want to install the Contribum package on.
 2. From the Home page, search for ``Named Credential`` in the Quick Find searchbar.
-3. Click the ``New Named Credential``
+3. Click the ``New Named Credential``.
 4. Fill in the form as follows:
 :raw-html:`<br />`
 ``Label``: Contribum
