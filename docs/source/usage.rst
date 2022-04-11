@@ -30,7 +30,7 @@ Salesforce Setup
 4. Fill in the form as the image provides: |NamedCred|
 
 
-.. |NamedCred| image:: /Users/jespereriksson/Desktop/contribum-docs/docs/Screenshot 2022-04-11 at 15.04.15.png
+.. |NamedCred| image:: Screenshot 2022-04-11 at 15.04.15.png
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:
 
