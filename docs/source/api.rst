@@ -70,6 +70,7 @@ To be able to continuously sync our Salesforce Contacts we need to register them
 It calls the Contribum API endpoint for each synced Contact that wants to be subscribers: ``/customer-register/C9999/update`` where C9999 is refering to the Issue number and the personnr query parameter is populated with the Contacts personal number.
 The endpoint requires a body consisting of two attributes per Contact that we want to sync::
 
+
 [
    {
       "personnr": "contact_personal_number_1",
@@ -85,6 +86,7 @@ The endpoint requires a body consisting of two attributes per Contact that we wa
 2. ``kundnr``` refers to Customer ID or Customer Unique Identifer and is set to the Contacts unique Salesforce ID.
 
 The answer we get back from Contribum looks like::
+
 
 {
   "new": 1,
@@ -113,6 +115,7 @@ The endpoint demands a body containing a list of customer ids (``kundnr`` set wh
 
 
 The request body will look something like::
+
 
 {
   "deleted": 2,
