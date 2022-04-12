@@ -61,10 +61,9 @@ This is done through the ``BatchSyncNeverSynced``` job in Salesforce. It calls t
 .. note::
    Note that personal number wont always be populated on a Contact. This is required for the initial sync. If the field is not populated it will be populated within a month by monthly fetch jobs that populates the personal number through other fields such as Mobile, Street Address, Last Name, First Name, etc. Read more about this under the Fetch section.
 
-The endpoint requires a body consisting of two attributes per Contact that we want to sync
+The endpoint requires a body consisting of two attributes per Contact that we want to sync::
 
-.. code-block:: json
-    {
+ {
         "personnr": "contact_personal_number_1",
         "kundnr": "salesforce_id_1",
     },
@@ -72,5 +71,7 @@ The endpoint requires a body consisting of two attributes per Contact that we wa
         "personnr": "contact_personal_number_2",
         "kundnr": "salesforce_id_2",
     }
+
+   
    
 
