@@ -8,7 +8,7 @@ Contribum Managed Package
 -------------------------
 
 The managed package handles integration between Contribum and Salesforce.
-It allows Contacts in Salesforce to be updated with up-to-date data about
+It allows Contacts in Salesforce to be updated with up-to-date data about following:
 
 1. First Name
 2. Last Name
@@ -64,7 +64,6 @@ This is done through the ``BatchSyncNeverSynced``` job in Salesforce. It calls t
 The endpoint requires a body consisting of two attributes per Contact that we want to sync
 
 .. code-block:: json
-   [
     {
         "personnr": "contact_personal_number_1",
         "kundnr": "salesforce_id_1",
@@ -73,5 +72,5 @@ The endpoint requires a body consisting of two attributes per Contact that we wa
         "personnr": "contact_personal_number_2",
         "kundnr": "salesforce_id_2",
     }
-   ]
+   
 
