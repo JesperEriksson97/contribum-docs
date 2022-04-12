@@ -92,6 +92,7 @@ The answer we get back from Contribum looks like::
   "updated": 2
 }
 
+
 Where
 
 1. ``new`` refers to all new subscribers registered successfully.
@@ -110,12 +111,14 @@ The endpoint demands a body containing a list of customer ids (``kundnr`` set wh
 
 ["0037a00001dU8DIAA0", "0037a00001dU8DJAA0", "0037a00001dU8DKAA0", "0037a00001dU8DLAA0"]
 
+
 The request body will look something like::
 
 {
   "deleted": 2,
   "ignored": 1
 }
+
 
 Where
 
