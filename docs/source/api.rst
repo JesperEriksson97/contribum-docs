@@ -70,8 +70,6 @@ To be able to continuously sync our Salesforce Contacts we need to register them
 It calls the Contribum API endpoint for each synced Contact that wants to be subscribers: ``/customer-register/C9999/update`` where C9999 is refering to the Issue number and the personnr query parameter is populated with the Contacts personal number.
 The endpoint requires a body consisting of two attributes per Contact that we want to sync::
 
-
-[
    {
       "personnr": "contact_personal_number_1",
       "kundnr": "salesforce_id_1",
@@ -80,22 +78,17 @@ The endpoint requires a body consisting of two attributes per Contact that we wa
       "personnr": "contact_personal_number_2",
       "kundnr": "salesforce_id_2",
    }
-]
 
 1. ``personnr``` refers to the Contacts Personal Number.
 2. ``kundnr``` refers to Customer ID or Customer Unique Identifer and is set to the Contacts unique Salesforce ID.
 
 The answer we get back from Contribum looks like::
 
-
 {
   "new": 1,
   "ignored": 1,
   "updated": 2
 }
-
-
-Where
 
 1. ``new`` refers to all new subscribers registered successfully.
 2. ``updated`` refers to all added subscribers that already exists at Contribum.
@@ -110,20 +103,15 @@ Whenever we want to remove a Subscriber from the Contribum API register, we do t
 It calls the Contribum API endpoint: ``/customer-register/C9999/delete`` for each Contact that has a active subscription set in Salesforce and wants to be removed from the Contribum API register where C9999 is refering to the Issue number and the personnr query parameter is populated with the Contacts personal number.
 The endpoint demands a body containing a list of customer ids (``kundnr`` set when we create the subscriber). Example of a delete body::
 
-
 ["0037a00001dU8DIAA0", "0037a00001dU8DJAA0", "0037a00001dU8DKAA0", "0037a00001dU8DLAA0"]
 
 
 The request body will look something like::
 
-
 {
   "deleted": 2,
   "ignored": 1
 }
-
-
-Where
 
 1. ``deleted`` refers to amount of successfully deleted subscribers
 2. ``ignored`` if no match on the ID.
