@@ -84,11 +84,11 @@ The endpoint requires a body consisting of two attributes per Contact that we wa
 
 The answer we get back from Contribum looks like::
 
-{
-  "new": 1,
-  "ignored": 1,
-  "updated": 2
-}
+   {
+   "new": 1,
+   "ignored": 1,
+   "updated": 2
+   }
 
 1. ``new`` refers to all new subscribers registered successfully.
 2. ``updated`` refers to all added subscribers that already exists at Contribum.
@@ -108,10 +108,10 @@ The endpoint demands a body containing a list of customer ids (``kundnr`` set wh
 
 The request body will look something like::
 
-{
-  "deleted": 2,
-  "ignored": 1
-}
+   {
+   "deleted": 2,
+   "ignored": 1
+   }
 
 1. ``deleted`` refers to amount of successfully deleted subscribers
 2. ``ignored`` if no match on the ID.
