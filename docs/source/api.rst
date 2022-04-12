@@ -4,11 +4,11 @@ Contribum API
 .. autosummary::
    :toctree: generated
 
-   Contribum Managed Package
-   -------------------------
+Contribum Managed Package
+-------------------------
 
-   The managed package handles integration between Contribum and Salesforce.
-   It allows Contacts in Salesforce to be updated with up-to-date data about
+The managed package handles integration between Contribum and Salesforce.
+It allows Contacts in Salesforce to be updated with up-to-date data about
 
 1. First Name
 2. Last Name
@@ -38,4 +38,40 @@ Contribum API
 14. Last Change Date (YYYYMMDD)
 15. LKF - Code (County Code)
 
+
+Contribum Managed Package Workflow
+-------------------------
+
+The integration to Contribum is composed by four main stages
+
+1. Initial Sync of Contacts
+2. Creating / Removing Subscribers
+3. Generating Data
+4. Continousouly Updating Contacts
+
+Initial Sync of Contacts
+-------------------------
+
+Whenever a Contact is created in Salesfoce it's set up to be synced with Contribum.
+This is done through the Salesforce field called ``wants_to_subscribe`` being set to ``true```.
+
+Once a day Salesforce rounds up all the new Contacts that has been created during the day and Syncs them with Contribum.
+This is done through the ``BatchSyncNeverSynced``` job in Salesforce. It calls the Contribum API endpoint for each created Contact: ``/pnrws/C9999/?personnr=PERSONAL_NUMBER`` where C9999 is refering to the Issue number and the personnr query parameter is populated with the Contacts personal number.
+
+.. note::
+   Note that personal number wont always be populated on a Contact. This is required for the initial sync. If the field is not populated it will be populated within a month by monthly fetch jobs that populates the personal number through other fields such as Mobile, Street Address, Last Name, First Name, etc. Read more about this under the Fetch section.
+
+The endpoint requires a body consisting of two attributes per Contact that we want to sync
+
+.. code-block:: json
+   [
+    {
+        "personnr": "contact_personal_number_1",
+        "kundnr": "salesforce_id_1",
+    },
+    {
+        "personnr": "contact_personal_number_2",
+        "kundnr": "salesforce_id_2",
+    }
+   ]
 
