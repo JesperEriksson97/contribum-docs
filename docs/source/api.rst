@@ -79,8 +79,8 @@ The create subscriber endpoint takes a request body like this::
       "kundnr": "salesforce_id_2",
    }
 
-1. ``personnr``` refers to the Contacts Personal Number.
-2. ``kundnr``` refers to Customer ID or Customer Unique Identifer and is set to the Contacts unique Salesforce ID.
+1. ``personnr`` refers to the Contacts Personal Number.
+2. ``kundnr`` refers to Customer ID or Customer Unique Identifer and is set to the Contacts unique Salesforce ID.
 
 The answer we get back from Contribum looks like::
 
