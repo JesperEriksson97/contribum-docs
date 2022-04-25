@@ -15,3 +15,8 @@ Contents
 
    usage
    api
+   batchsyncneversynced
+   batchaddsubscribers
+   batchremovesubscribers
+   batchsyncsubscribers
+   
