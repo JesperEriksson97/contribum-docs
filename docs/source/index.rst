@@ -5,7 +5,7 @@ Welcome to Contribum Managed Package documentation!
 Contribum is used to monitor and pull data through the swedish population registration API. 
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+how to install and setup the package.
 
 
 Contents
