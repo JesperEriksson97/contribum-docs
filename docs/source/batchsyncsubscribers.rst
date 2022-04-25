@@ -1,6 +1,9 @@
 Syncing Subscribers
 ========================
 
+.. autosummary::
+   :toctree: generated
+
 **Description**
 
 Whenever some data changes about a Contact in Contribum, we want to be able to update it in Salesforce aswell.

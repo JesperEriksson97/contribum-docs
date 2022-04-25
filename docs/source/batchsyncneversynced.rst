@@ -1,7 +1,9 @@
 Initial Sync of Contacts
 ========================
 
-.. _Setup:
+.. autosummary::
+   :toctree: generated
+
 
 Initial Sync
 ------------

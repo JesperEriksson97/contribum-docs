@@ -1,6 +1,10 @@
 Removing Subscribers
 ========================
 
+.. autosummary::
+   :toctree: generated
+
+
 **Description**
 
 If, for any reason, a Contact wants to data to be removed from Salesforce we need to remove that Contact from the subscribers register at Contribum.

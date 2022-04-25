@@ -1,6 +1,9 @@
 Adding Subscribers
 ========================
 
+.. autosummary::
+   :toctree: generated
+
 **Description**
 
 After a Contact has been synced we need to add it as a subscriber to Contribum for it to continuously be synced on any changes.
