@@ -1,10 +1,11 @@
 Adding Subscribers
-========================
+==================
 
-.. autosummary::
+.. batchaddsubscribers::
    :toctree: generated
 
-**Description**
+Description
+-----------
 
 After a Contact has been synced we need to add it as a subscriber to Contribum for it to continuously be synced on any changes.
 This is done through a batch job and is located in the ``BatchAddSubscribers`` class.

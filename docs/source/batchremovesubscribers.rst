@@ -1,11 +1,12 @@
 Removing Subscribers
-========================
+====================
 
 .. autosummary::
    :toctree: generated
 
 
-**Description**
+Description
+-----------
 
 If, for any reason, a Contact wants to data to be removed from Salesforce we need to remove that Contact from the subscribers register at Contribum.
 This is necessary to ensure that the contact is not included in the ``BatchSyncSubscribers`` job (see :doc:`batchsyncsubscribers`).

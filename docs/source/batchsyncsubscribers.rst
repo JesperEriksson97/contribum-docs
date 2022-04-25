@@ -1,10 +1,12 @@
 Syncing Subscribers
-========================
+===================
 
 .. autosummary::
    :toctree: generated
 
-**Description**
+
+Description
+-----------
 
 Whenever some data changes about a Contact in Contribum, we want to be able to update it in Salesforce aswell.
 This is done through the ``BatchSyncSubscribers`` job. This is a batch job which goes through 4 major steps:
